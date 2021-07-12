@@ -1,0 +1,21 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+    <strong>Well done!</strong> You successfully read this import alert message.
+</div>
+
+<button type="button" class="btn btn-info" (click)="alerta = 'alert-info'">
+    Alerta
+</button>
+
+<button type="button" class="btn btn-success" (click)="alerta = 'alert-success'">
+    alerta
+</button>
+
+<button type="button" class="btn btn-danger" (click)="alerta = 'alert-danger'">
+    Alerta
+</button>
+
+<h3 [ngClass]="{ 'text-danger': propety.danger , 'text-info': !propety.danger }">Hola mundo</h3>
+
+<button (click)="propety.danger = !propety.danger" class="btn btn-danger">
+    cambiar
+</button>
